@@ -5,17 +5,115 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Products</title>
+    <!-- CSS only -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-gH2yIJqKdNHPEq0n4Mqa/HGKIhSkIHeL5AyhkYV8i59U5AR6csBvApHHNl/vI1Bx" crossorigin="anonymous">
+    <link rel="stylesheet" href="./style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/all.min.css">
+    <link rel="icon" href="./images/icon.jpg">
+    <title>Absurd Design</title>
 </head>
 
 <body>
-    <div id="header">
-        <div class="nav">
-            <div class="image">
-                Hello world
-            </div>
+    <!-- nav bar  -->
+    <div id="header" class="container-fluid sticky-top d-flex justify-content-between align-items-center" style="background-color: white;">
+        <div class="image">
+            <img src="./images/header.png" class="m-3 rounded">
+        </div>
+
+        <div class="menu m-3 d-flex justify-content-evenly gap-3">
+            <a href="#illustration">Illustratin Series</a>
+            <a href="">About</a>
+            <a href="#sigin">SignIn</a>
+            <a href="">SingUp</a>
         </div>
     </div>
+    <!-- --------------------nav bar end----------------------- -->
+
+    <!-- Header content with banner image -->
+    <div class="row">
+        <div class="column1">
+            <h1 class="mb-3 text-center text-uppercase fs-2 fw-bold">absurd illustrations that make sense</h1>
+            <p class="fs-4">What about absurd illustrations for your projects? Take every user on an individual journey through their own imagination.</p>
+            <button class="btn btn-success px-3 d-inline-block text-white">Become a member</button>
+        </div>
+        <div class="column2">
+            <img src="./images/cl0ic0pge00010tmp7yyv9fo0.jpg" alt="banner" width="500px">
+        </div>
+    </div>
+
+    <!-- ===========================Illustration===================== -->
+    <section class="illustration-series container mt-5 pt-3" id="illustration">
+        <h2 class="text-center fw-bold">Illustration Series</h2>
+        <p class="text-center">Welcome to my space for experiments! Look at this like a journey we can take together every step of the way, beginning another chapter with each new phase of the project development. And who knows where it will take us?</p>
+        <div class="series my-5 ">
+            <div class="card p-3 shadow">
+                <img src="./images/illu-1.gif" class="mb-4 rounded">
+                <h3 class="mb-4 mt-2 text-center fst-italic">Chapter-1</h3>
+                <p class="mb-5 mt-2 text-center text-muted">already done! the happy human is working on the new chapter</p>
+                <button class="btn btn-success mt-3">Preview</button>
+            </div>
+
+            <div class="card p-3 shadow">
+                <img src="./images/illu-2.gif" class="mb-4 rounded">
+                <h3 class="mb-4 mt-2 text-center fst-italic">Chapter-2</h3>
+                <p class="mb-5 mt-2 text-center text-muted">already done! the happy human is working on the new chapter</p>
+                <button class="btn btn-success mt-3">Preview</button>
+            </div>
+
+            <div class="card p-3 shadow">
+                <img src="./images/illu-3.gif" class="mb-4 rounded">
+                <h3 class="mb-4 mt-2 text-center fst-italic">Chapter-3</h3>
+                <p class="mb-5 mt-2 text-center text-muted">already done! the happy human is working on the new chapter</p>
+                <button class="btn btn-success mt-3">Preview</button>
+            </div>
+
+            <div class="card p-3 shadow">
+                <img src="./images/illu-4.gif" class="mb-4 rounded">
+                <h3 class="mb-4 mt-2 text-center fst-italic">Chapter-4</h3>
+                <p class="mb-5 mt-2 text-center text-muted">already done! the happy human is working on the new chapter</p>
+                <button class="btn btn-success mt-3">Preview</button>
+            </div>
+
+            <div class="card p-3 shadow">
+                <img src="./images/illu-5.gif" class="mb-4 rounded">
+                <h3 class="mb-4 mt-2 text-center fst-italic">Chapter-5</h3>
+                <p class="mb-5 mt-2 text-center text-muted">already done! the happy human is working on the new chapter</p>
+                <button class="btn btn-success mt-3">Preview</button>
+            </div>
+
+            <div class="card p-3 shadow">
+                <img src="./images/illu-6.gif" class="mb-4 rounded">
+                <h3 class="mb-4 mt-2 text-center fst-italic">Chapter-6</h3>
+                <p class="mb-5 mt-2 text-center text-muted">already done! the happy human is working on the new chapter</p>
+                <button class="btn btn-success mt-3">Preview</button>
+            </div>
+        </div>
+        <!-- ============================Illustration end========================== -->
+
+        <!-- -------------------------------signIn---------------------------- -->
+
+        <form action="" id="sigin" class="align-content-center mb-5 w-50 pt-5">
+            <h1 class="text-center">Sign In</h1>
+            <p class="text-center">sing in to your account and discover the world</p>
+
+            <div class="email mb-4">
+                <span class="text-muted">Email Address</span>
+                <input type="email" class="form-control">
+            </div>
+
+            <div class="passord mb-4">
+                <span class="text-muted">Password</span>
+                <input type="password" class="form-control">
+            </div>
+
+            <div><i class="fa-solid fa-toggle-off me-2"></i>Keep me logged In.</div>
+
+            <button class="mt-3 mb-5 float-end btn btn-primary">Sign In</button>
+        </form>
+    </section>
+
+
+
 </body>
 
 </html>

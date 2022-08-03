@@ -1,0 +1,128 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+#header {
+    /* background-color: cyan; */
+    height: 70px;
+}
+
+.image img {
+    width: 45px;
+    height: 45px;
+}
+
+#header .menu a {
+    font-size: 1rem;
+    text-decoration: none;
+    color: black;
+}
+
+
+/* =======illustrarions=========== */
+
+.illustration-series .series {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, auto));
+    gap: 1.5rem;
+}
+
+.series .card {
+    position: relative;
+    transition: all 300ms ease;
+    border: none;
+    max-width: 280px;
+}
+
+.series .card:hover {
+    box-shadow: 3px 3px 3px rgb(241, 241, 241);
+}
+
+.series .card img {
+    width: 100%;
+    height: 250px;
+    object-fit: cover;
+}
+
+
+/* --------------------illustration end------------------- */
+
+
+/* -----------------------signIn---------------------------- */
+
+form {
+    margin-left: 250px;
+}
+
+form .fa-solid {
+    font-size: 1.5rem;
+}
+
+body {
+    background-size: cover;
+    background-attachment: fixed;
+    font-family: 'Fira Sans', sans-serif;
+}
+
+.row {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 2% 5%;
+}
+
+.row .column1 {
+    padding-right: 50px;
+}
+
+.column1 h1 {
+    font-size: 60px;
+    margin-bottom: 10px;
+}
+
+.column1 p {
+    font-size: 25px;
+    margin-bottom: 20px;
+}
+
+.column1 button {
+    width: 150px;
+    padding: 12px 20px;
+    border-radius: 20px;
+    border-style: none;
+    color: blue;
+    font-size: 17px;
+    font-weight: 600;
+}
+
+
+/* Header content responsive */
+
+@media screen and (max-width: 980px) {
+    .column2 img {
+        width: 350px;
+    }
+    .column1 h1 {
+        font-size: 40px;
+    }
+    .column1 p {
+        font-size: 17px;
+    }
+    .row {
+        margin-top: 80px;
+    }
+}
+
+@media screen and (max-width: 600px) {
+    .column1 h1 {
+        font-size: 35px;
+    }
+    .row {
+        flex-direction: column;
+    }
+    .row .column1 {
+        padding: 30px;
+    }
+}
